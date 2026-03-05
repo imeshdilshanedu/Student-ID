@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- START OF HEAD SECTION -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Card | Imesh Dilshan</title>
+    
+    <!-- Custom Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- START OF CSS STYLING SECTION -->
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* Gradient Background Requirement */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Card Container */
+        .card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 350px;
+            /* Rounded Corners & Drop Shadow Requirements */
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Card Header (Avatar Area) */
+        .card-header {
+            background: #f8f9fa;
+            padding: 40px 20px 20px 20px;
+            position: relative;
+        }
+
+        /* Circular Avatar Placeholder */
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            border-radius: 50%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: 600;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Card Body (Content Area) */
+        .card-body {
+            padding: 20px 30px 40px 30px;
+        }
+
+        .student-name {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .student-stream {
+            font-size: 0.9rem;
+            color: #0072ff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .student-bio {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Decorative Divider */
+        .divider {
+            height: 2px;
+            width: 50px;
+            background: #eee;
+            margin: 15px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- START OF DIV STRUCTURE -->
+    <div class="card">
+        <!-- Card Header with Avatar -->
+        <div class="card-header">
+            <div class="avatar">
+                ID
+            </div>
+        </div>
+
+        <!-- Card Body with Info -->
+        <div class="card-body">
+            <h1 class="student-name">Imesh Dilshan</h1>
+            <span class="student-stream">Information Systems</span>
+            
+            <div class="divider"></div>
+            
+            <p class="student-bio">
+                Undergraduate student at University of Colombo School of Computing, 
+                studying Information Systems.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
